@@ -1,0 +1,69 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Error</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 500px;
+            width: 90%;
+            background-color: white;
+            padding: 2rem;
+            border-radius: 20px;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .container:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+
+        .error-message {
+            color: #f44336;
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .redirect-link {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1rem;
+            display: inline-block;
+            margin-top: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .redirect-link:hover {
+            text-decoration: underline;
+            color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="error-message">
+            <p>Registration failed!</p>
+            <p>There was an error processing your registration. Please try again later.</p>
+        </div>
+        <a href="index.jsp" class="redirect-link">Go back to Home</a>
+    </div>
+</body>
+</html>

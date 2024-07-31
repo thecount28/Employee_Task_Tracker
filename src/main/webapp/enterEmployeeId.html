@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enter Employee ID</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0;
+        }
+
+        h2 {
+            color: #333;
+            margin-bottom: 2rem;
+        }
+
+        form {
+            max-width: 400px;
+            width: 90%;
+            background-color: white;
+            padding: 2rem;
+            border-radius: 20px;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        form:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 1rem;
+            color: #666;
+            font-size: 1rem;
+            text-align: left;
+        }
+
+        input[type="text"] {
+            width: calc(100% - 20px);
+            padding: 0.8rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+            box-sizing: border-box;
+        }
+
+        button[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #45a049;
+            box-shadow: 0 4px 15px rgba(76,175,80,0.3);
+        }
+
+        .redirect-link {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+            display: block;
+            margin-top: 1rem;
+            transition: color 0.3s ease;
+        }
+
+        .redirect-link:hover {
+            color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <form action="EditEmployeeServlet" method="get">
+        <h2>Enter Employee ID to Edit Details</h2>
+        <label for="employee_id">Employee ID:</label>
+        <input type="text" id="employee_id" name="employee_id" required>
+        <button type="submit">Submit</button>
+        <a href="adminHome.jsp" class="redirect-link">Go back to Home</a>
+    </form>
+</body>
+</html>
